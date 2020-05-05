@@ -1,32 +1,17 @@
-// alert(1);
-// [0,3].push;
-//comment
-// комментарии
-// 2 строчки
-var leftBorderWidth = 1;
+'use strict';
 
-let second = 2;
-const pi = 3.14;
-console.log(pi);
-var number = 5;
-var string = "Hello, World";
-var sym = Symbol();
-var boolean = true;
-null;
-undefined;
-var obj = {};
+let money = prompt("Ваш бюджет на месяц?"),
+    time = "Введите дату в формате YYYY-MM-DD";
+let appData = {
+    budget: money,
+    timeData: time,
+    expenses: {},
+    optionalExpenses: {},
+    income: [],
+    savings: false
+};
+let firstQuestion = prompt("Введите обязательную статью расходов в этом месяце"),
+    secondQuestion = prompt("Во сколько обойдется?");
 
-var Persone = {
-    name: "Dima",
-    age: "29",
-    isMerried: false
-}
-console.log(Persone.name);
-console.log(Persone["age"]);
-
-let arr = [1,2,3,4];
-console.log(arr[0]);
-// let answer = confirm("Are you happy?");
-// console.log(answer);
-let answer = prompt("Are you happy?", "");
-console.log( typeof(answer) );
+appData.expenses.firstQuestion = secondQuestion;
+alert(appData.budget/30);
