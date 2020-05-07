@@ -47,10 +47,11 @@ do {
     if (typeof(a)==='string' && typeof(a) != null && typeof(b) != null  && a != '' && b != '' && a.length < 50 ){
         console.log("done");
         appData.expenses[a] =  b;
+        i++;
     } else {
-
+        console.log("Bad input");
     }
-    i++;
+    
 } while (i < 2);
 
 
